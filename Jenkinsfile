@@ -3,13 +3,13 @@ pipeline{
         label "master"
     }
     tools{
-        maven 'mavne382'
+        maven 'maven363'
         jdk 'java11'
     }
     stages{
         stage('clone'){
             steps{
-                git credentialsId: 'github', url: 'https://github.com/Prakashja/web-app.git'
+                git credentialsId: 'github', url: 'https://github.com/manojbyna/Web-App.git'
             }}
         stage('build'){
             steps{
